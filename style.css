@@ -202,3 +202,27 @@ footer {
     width: 95%;
   }
 }
+/* SMALL HERO (PAGE HEADER) */
+.hero-small {
+  background: linear-gradient(to right, orange, darkgreen);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.hero-small h1 {
+  font-size: 32px;
+}
+
+/* BETTER CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
