@@ -226,3 +226,100 @@ footer {
 .card:hover {
   transform: translateY(-5px);
 }
+.image-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.image-row img {
+  width: 100%;
+  max-width: 420px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+/* PHONE VIEW IMPROVEMENT */
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  nav a {
+    font-size: 14px;
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  p, li {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .section,
+  .about,
+  .programs,
+  .contact,
+  .media,
+  .donate {
+    padding: 20px 12px;
+  }
+
+  .cards,
+  .image-row,
+  .program-grid,
+  .content-row {
+    display: block;
+  }
+
+  .card,
+  .program-card,
+  .content-box {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .hero,
+  .hero-small {
+    padding: 40px 15px;
+    text-align: center;
+  }
+
+  .top-bar {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px 10px;
+  }
+}
