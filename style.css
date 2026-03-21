@@ -323,3 +323,510 @@ footer {
     padding: 20px 10px;
   }
 }
+/* MAKE DONATE BUTTON STAND OUT */
+nav a[href="donate.html"] {
+  font-size: 16px;
+  font-weight: bold;
+  background: orange;
+  color: darkblue;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+nav a[href="donate.html"]:hover {
+  background: darkblue;
+  color: white;
+}
+/* DONATE MENU BUTTON */
+nav a.donate-btn {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  background: orange !important;
+  color: darkblue !important;
+  padding: 10px 16px !important;
+  border-radius: 8px !important;
+  display: inline-block !important;
+}
+
+nav a.donate-btn:hover {
+  background: darkblue !important;
+  color: white !important;
+}
+/* DONATE BUTTON SAME STYLE AS MENU BUT HIGHLIGHTED */
+nav a.donate-btn {
+  font-size: 16px !important;
+  font-weight: bold !important;
+  font-family: inherit !important;
+  text-decoration: none !important;
+  background: orange !important;
+  color: darkgreen !important;
+  padding: 8px 14px !important;
+  border-radius: 6px !important;
+  display: inline-block !important;
+}
+
+nav a.donate-btn:hover {
+  background: yellow !important;
+  color: darkblue !important;
+}
+.section ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 10px;
+}
+
+.section h3 {
+  margin-top: 20px;
+  color: darkgreen;
+}
+/* PROFESSIONAL DONATE SECTION LOOK */
+.section ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.section ul li {
+  margin-bottom: 12px;
+  background: #ffffff;
+  padding: 12px 14px;
+  border-left: 4px solid orange;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  list-style-position: inside;
+}
+
+.section h2 {
+  margin-bottom: 18px;
+}
+
+.section h3 {
+  margin-top: 22px;
+  margin-bottom: 10px;
+  color: darkgreen;
+  font-size: 22px;
+}
+
+.section p {
+  margin-bottom: 14px;
+}
+
+/* PHONE VIEW */
+@media (max-width: 768px) {
+  .section ul li {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+
+  .section h3 {
+    font-size: 18px;
+  }
+
+  .section p {
+    font-size: 15px;
+  }
+}
+/* BETTER FONT AND READING FLOW */
+body {
+  font-family: "Trebuchet MS", "Segoe UI", Arial, sans-serif;
+  color: #1f2937;
+  line-height: 1.75;
+  letter-spacing: 0.2px;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  letter-spacing: 0.4px;
+  line-height: 1.25;
+}
+
+h1 {
+  font-size: 2.3rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.02rem;
+  margin-bottom: 14px;
+  max-width: 850px;
+}
+
+.section p,
+.section li {
+  color: #243447;
+}
+
+.section {
+  text-align: left;
+}
+
+.section h2 {
+  position: relative;
+  padding-bottom: 8px;
+}
+
+.section h2::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 4px;
+  background: orange;
+  border-radius: 4px;
+  margin-top: 8px;
+}
+
+li {
+  line-height: 1.7;
+}
+
+.top-bar {
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+nav a {
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+
+.hero p,
+.hero-small p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  h3 {
+    font-size: 1.08rem;
+  }
+
+  p,
+  li {
+    font-size: 0.98rem;
+  }
+
+  .hero p,
+  .hero-small p {
+    font-size: 1rem;
+  }
+}
+/* PROFESSIONAL FONT MIX, BOLDING, AND NUMBERING */
+
+/* Main reading text */
+body,
+p,
+li,
+a,
+span {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Main headings */
+h1,
+h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 700;
+}
+
+/* Smaller headings / card titles */
+h3,
+h4 {
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-weight: 700;
+  letter-spacing: 0.3px;
+}
+
+/* Better paragraph flow */
+p {
+  font-size: 1.02rem;
+  line-height: 1.8;
+  margin-bottom: 14px;
+}
+
+/* Strong text looks cleaner */
+strong,
+b {
+  font-weight: 700;
+  color: #0f2f57;
+}
+
+/* Better section titles */
+.section h2 {
+  font-size: 1.85rem;
+  margin-bottom: 16px;
+  text-transform: none;
+}
+
+/* Better subheadings */
+.section h3 {
+  font-size: 1.18rem;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  color: darkgreen;
+}
+
+/* Professional ordered lists */
+ol {
+  counter-reset: item;
+  margin: 16px 0;
+  padding-left: 0;
+}
+
+ol li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 12px;
+  padding: 12px 14px 12px 48px;
+  background: #ffffff;
+  border-left: 4px solid orange;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+ol li::before {
+  counter-increment: item;
+  content: counter(item);
+  position: absolute;
+  left: 14px;
+  top: 11px;
+  width: 24px;
+  height: 24px;
+  background: darkblue;
+  color: white;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+/* Professional unordered lists */
+ul {
+  margin: 16px 0;
+  padding-left: 0;
+}
+
+ul li {
+  list-style: none;
+  position: relative;
+  margin-bottom: 12px;
+  padding: 12px 14px 12px 38px;
+  background: #ffffff;
+  border-left: 4px solid green;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+}
+
+ul li::before {
+  content: "•";
+  position: absolute;
+  left: 14px;
+  top: 8px;
+  font-size: 22px;
+  color: orange;
+  font-weight: bold;
+}
+
+/* Highlight key intro text */
+.hero p,
+.hero-small p,
+.intro p {
+  font-size: 1.08rem;
+  line-height: 1.85;
+  font-weight: 500;
+}
+
+/* Phone view */
+@media (max-width: 768px) {
+  .section h2 {
+    font-size: 1.4rem;
+  }
+
+  .section h3 {
+    font-size: 1.05rem;
+  }
+
+  p,
+  li {
+    font-size: 0.98rem;
+    line-height: 1.7;
+  }
+
+  ol li,
+  ul li {
+    padding: 10px 12px 10px 40px;
+  }
+
+  ol li::before {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+  }
+}
+/* PROFESSIONAL SUBTOPIC BACKGROUNDS */
+.section h3 {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(255,165,0,0.12), rgba(0,128,0,0.08));
+  padding: 8px 14px;
+  border-left: 5px solid orange;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  display: inline-block;
+  background: linear-gradient(90deg, rgba(0,0,139,0.08), rgba(255,165,0,0.08));
+  padding: 10px 16px;
+  border-radius: 10px;
+}
+
+.card h3,
+.program-card h3,
+.content-box h3 {
+  display: inline-block;
+  background: #f8fafc;
+  padding: 6px 12px;
+  border-left: 4px solid darkgreen;
+  border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .section h2,
+  .section h3,
+  .card h3,
+  .program-card h3,
+  .content-box h3 {
+    max-width: 100%;
+  }
+
+  .section h2 {
+    padding: 8px 12px;
+  }
+
+  .section h3 {
+    padding: 7px 11px;
+  }
+}
+/* FOLLOW US + PROFESSIONAL FOOTER */
+.social-links,
+.footer-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+.social-links a,
+.footer-socials a {
+  text-decoration: none;
+  background: #ffffff;
+  color: darkblue;
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  transition: 0.3s ease;
+}
+
+.social-links a:hover,
+.footer-socials a:hover {
+  background: orange;
+  color: white;
+}
+
+.site-footer {
+  background: linear-gradient(135deg, #0b2e4f, #0f5132);
+  color: white;
+  padding: 35px 20px;
+  margin-top: 40px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.site-footer h3 {
+  color: orange;
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+  color: #f3f4f6;
+}
+
+.site-footer a {
+  color: #ffd166;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  margin-top: 18px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* PHONE VIEW */
+@media (max-width: 768px) {
+  .social-links,
+  .footer-socials {
+    justify-content: center;
+  }
+
+  .social-links a,
+  .footer-socials a {
+    font-size: 14px;
+    padding: 9px 12px;
+  }
+
+  .site-footer {
+    padding: 28px 14px;
+  }
+
+  .site-footer h3 {
+    font-size: 18px;
+  }
+
+  .site-footer p {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
