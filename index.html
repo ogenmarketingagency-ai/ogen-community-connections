@@ -9,7 +9,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+function loadJoinedMembers() {
+  const members = JSON.parse(localStorage.getItem("joinedMembers")) || [];
+  const list = document.getElementById("joinedMembers");
+  if (!list) return;
 
+  list.innerHTML = "";
+  members.forEach(function(member) {
+    const li = document.createElement("li");
+    li.textContent = member.name + " | ID: " + member.id + " | Phone: " + member.phone;
+    list.appendChild(li);
+  });
+}
+
+function saveJoin(event) {
+  event.preventDefault();
+
+  const name = document.getElementById("joinName").value;
+  const id = document.getElementById("joinId").value;
+  const phone = document.getElementById("joinPhone").value;
+
+  const members = JSON.parse(localStorage.getItem("joinedMembers")) || [];
+  members.push({ name: name, id: id, phone: phone });
+  localStorage.setItem("joinedMembers", JSON.stringify(members));
+
+  document.getElementById("joinSuccess").style.display = "block";
+  document.querySelector(".join-form").reset();
+  loadJoinedMembers();
+}
+
+loadJoinedMembers();
+</script>
 <body>
 
 <!-- TOP MOVING BAR -->
@@ -98,19 +129,22 @@
 </section>
 
 <!-- SIGN UP -->
-<section class="section grey">
-  <h2>Join Our Community</h2>
+<form class="join-form" onsubmit="saveJoin(event)">
+  <input type="text" id="joinName" placeholder="Full Name" required>
+  <input type="text" id="joinId" placeholder="National ID Number" required>
+  <input type="tel" id="joinPhone" placeholder="Phone Number" required>
+  <input type="file" id="joinPhoto" accept="image/*" required>
+  <button type="submit">Join Community</button>
+</form>
 
-  <form>
-    <input type="text" placeholder="Full Names" required>
-    <input type="text" placeholder="National ID Number" required>
-    <input type="tel" placeholder="Phone Number" required>
+<p id="joinSuccess" class="join-success" style="display:none;">
+  Successfully joined.
+</p>
 
-    <label>Upload Passport Photo</label>
-    <input type="file">
-
-    <a href="https://wa.me/254725765084?text=Hello%20I%20confirm%20I%20want%20to%20join%20Ogen%20Community%20Connections" target="_blank">
-  <button>Join Now</button>
+<div class="joined-members-box">
+  <h3>Joined Members</h3>
+  <ul id="joinedMembers"></ul>
+</div>
 </a>
   </form>
 </section>
